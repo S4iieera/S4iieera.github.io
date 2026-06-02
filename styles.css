@@ -303,6 +303,7 @@ h3 {
 .hero-note,
 .section-copy,
 .project-content p,
+.voluntary-feature p,
 .skill-card p,
 .mini-project p,
 .contact-section p,
@@ -466,6 +467,7 @@ h3 {
 .skill-card,
 .timeline-item,
 .mini-project,
+.community-card,
 .experience-card {
   border: 1px solid var(--line);
   border-radius: 22px 22px 34px 34px;
@@ -511,6 +513,64 @@ h3 {
   color: var(--accent);
   font-size: 0.86rem;
   font-weight: 800;
+}
+
+.voluntary-section {
+  border-top: 1px solid var(--line);
+}
+
+.voluntary-feature {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.32fr) minmax(0, 1fr);
+  gap: clamp(28px, 6vw, 72px);
+  align-items: center;
+  padding: clamp(26px, 5vw, 52px);
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background:
+    linear-gradient(135deg, rgba(242, 200, 121, 0.11), transparent 34%),
+    linear-gradient(180deg, rgba(255, 216, 168, 0.045), rgba(255, 255, 255, 0.02)),
+    rgba(255, 255, 255, 0.03);
+  box-shadow: var(--shadow);
+}
+
+.community-symbol {
+  position: relative;
+  width: min(220px, 100%);
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border: 1px solid rgba(242, 200, 121, 0.28);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 42% 38%, rgba(242, 200, 121, 0.2), transparent 36%),
+    rgba(242, 138, 46, 0.055);
+}
+
+.symbol-crescent,
+.symbol-star {
+  position: absolute;
+  display: block;
+}
+
+.symbol-crescent {
+  inset: 24%;
+  border-radius: 50%;
+  box-shadow: -18px 0 0 4px var(--accent-strong);
+  transform: rotate(-18deg);
+}
+
+.symbol-star {
+  top: 27%;
+  right: 28%;
+  width: 18px;
+  height: 18px;
+  background: var(--accent-strong);
+  clip-path: polygon(50% 0%, 61% 36%, 98% 36%, 68% 57%, 79% 92%, 50% 70%, 21% 92%, 32% 57%, 2% 36%, 39% 36%);
+}
+
+.community-card {
+  margin-top: 26px;
+  box-shadow: none;
 }
 
 .skills-grid {
@@ -618,6 +678,7 @@ h3 {
   .hero-inner,
   .split-section,
   .project-feature,
+  .voluntary-feature,
   .contact-section {
     grid-template-columns: 1fr;
   }
@@ -710,8 +771,13 @@ h3 {
   .project-grid,
   .skills-grid,
   .experience-grid,
+  .voluntary-feature,
   .timeline-item {
     grid-template-columns: 1fr;
+  }
+
+  .community-symbol {
+    width: 150px;
   }
 
   .site-footer {
