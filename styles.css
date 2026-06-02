@@ -84,10 +84,7 @@ img {
   left: 0;
   right: 0;
   z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px clamp(32px, 6vw, 88px);
+  padding: 18px 0;
   background: transparent;
   border-bottom: 1px solid transparent;
   backdrop-filter: none;
@@ -106,8 +103,19 @@ img {
   -webkit-backdrop-filter: blur(22px) saturate(135%);
 }
 
+.header-inner {
+  display: grid;
+  width: min(1140px, calc(100% - 40px));
+  margin: 0 auto;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(20px, 4vw, 48px);
+}
+
 .brand,
 .nav-links,
+.header-actions,
+.social-links,
 .hero-actions,
 .project-links,
 .contact-links,
@@ -131,13 +139,38 @@ img {
 }
 
 .nav-links {
+  justify-self: center;
   gap: 28px;
   color: var(--muted);
   font-size: 0.95rem;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.social-links a:hover {
   color: var(--ink);
+}
+
+.header-actions {
+  justify-self: end;
+  gap: 22px;
+}
+
+.social-links {
+  gap: 18px;
+}
+
+.social-links a {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.social-links a:first-child {
+  font-size: 0.95rem;
+  text-transform: none;
 }
 
 .nav-toggle {
@@ -544,6 +577,14 @@ h3 {
     background: rgba(8, 7, 11, 0.98);
   }
 
+  .header-inner {
+    grid-template-columns: auto auto;
+  }
+
+  .social-links {
+    display: none;
+  }
+
   .nav-links.is-open {
     display: flex;
   }
@@ -566,8 +607,11 @@ h3 {
   }
 
   .site-header {
-    padding-inline: 24px;
     max-width: 100vw;
+  }
+
+  .header-inner {
+    width: min(100% - 48px, 1140px);
   }
 
   .brand-mark {
