@@ -152,25 +152,32 @@ img {
 
 .header-actions {
   justify-self: end;
-  gap: 22px;
+  gap: 24px;
 }
 
 .social-links {
-  gap: 18px;
+  gap: 22px;
 }
 
 .social-links a {
+  display: inline-grid;
+  width: 18px;
+  height: 18px;
+  place-items: center;
   color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 900;
-  letter-spacing: 0;
-  line-height: 1;
-  text-transform: uppercase;
+  opacity: 0.92;
+  transition: color 180ms ease, opacity 180ms ease, transform 180ms ease;
 }
 
-.social-links a:first-child {
-  font-size: 0.95rem;
-  text-transform: none;
+.social-links svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.social-links a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
 }
 
 .nav-toggle {
