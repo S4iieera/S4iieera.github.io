@@ -534,43 +534,26 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.community-symbol {
-  position: relative;
-  width: min(220px, 100%);
-  aspect-ratio: 1;
-  margin: 0 auto;
-  border: 1px solid rgba(242, 200, 121, 0.28);
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 42% 38%, rgba(242, 200, 121, 0.2), transparent 36%),
-    rgba(242, 138, 46, 0.055);
-}
-
-.symbol-crescent,
-.symbol-star {
-  position: absolute;
-  display: block;
-}
-
-.symbol-crescent {
-  inset: 24%;
-  border-radius: 50%;
-  box-shadow: -18px 0 0 4px var(--accent-strong);
-  transform: rotate(-18deg);
-}
-
-.symbol-star {
-  top: 27%;
-  right: 28%;
-  width: 18px;
-  height: 18px;
-  background: var(--accent-strong);
-  clip-path: polygon(50% 0%, 61% 36%, 98% 36%, 68% 57%, 79% 92%, 50% 70%, 21% 92%, 32% 57%, 2% 36%, 39% 36%);
-}
-
 .community-card {
   margin-top: 26px;
   box-shadow: none;
+}
+
+.community-logo-tile {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+  padding: clamp(18px, 3vw, 30px);
+  border: 1px solid rgba(242, 200, 121, 0.22);
+  border-radius: 24px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(242, 232, 216, 0.92)),
+    #fff;
+}
+
+.community-logo-tile img {
+  width: min(330px, 100%);
+  filter: contrast(1.04);
 }
 
 .skills-grid {
@@ -776,8 +759,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .community-symbol {
-    width: 150px;
+  .community-logo-tile {
+    min-height: 140px;
   }
 
   .site-footer {
