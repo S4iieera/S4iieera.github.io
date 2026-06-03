@@ -534,7 +534,7 @@ h3 {
 
 .community-card {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(190px, 240px);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
   gap: clamp(22px, 4vw, 42px);
   align-items: center;
   box-shadow: none;
@@ -552,7 +552,7 @@ h3 {
 }
 
 .community-logo-mark img {
-  width: min(230px, 100%);
+  width: min(340px, 100%);
   height: auto;
   object-fit: contain;
   opacity: 0.82;
@@ -778,7 +778,7 @@ h3 {
   }
 
   .community-logo-mark img {
-    width: min(210px, 86%);
+    width: min(250px, 92%);
   }
 
   .site-footer {
