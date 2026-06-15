@@ -22,6 +22,9 @@
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* 8-pointed star (khatim) — two overlapping squares, an Islamic geometric motif */
+  --star-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='4.5' y='4.5' width='15' height='15' fill='white'/%3E%3Crect x='4.5' y='4.5' width='15' height='15' fill='white' transform='rotate(45 12 12)'/%3E%3C/svg%3E");
 }
 
 * {
@@ -163,6 +166,24 @@ h3 {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+}
+
+.eyebrow,
+.project-type {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.eyebrow::before,
+.project-type::before {
+  content: "";
+  width: 0.78em;
+  height: 0.78em;
+  flex: none;
+  background: currentColor;
+  -webkit-mask: var(--star-mask) center / contain no-repeat;
+  mask: var(--star-mask) center / contain no-repeat;
 }
 
 .hero-note,
@@ -823,10 +844,27 @@ h3 {
 
 .site-footer {
   justify-content: space-between;
+  gap: 16px;
   padding: 30px 0 44px;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.footer-motto {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  letter-spacing: 0.02em;
+  font-style: italic;
+}
+
+.footer-motto svg {
+  width: 13px;
+  height: 13px;
+  flex: none;
+  fill: var(--accent);
+  opacity: 0.9;
 }
 
 /* ===========================================================
