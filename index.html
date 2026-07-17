@@ -17,8 +17,9 @@
       content="Software engineering graduate focused on Python, data pipelines, NLP, and practical software projects."
     />
     <meta property="og:url" content="https://s4iieera.github.io/" />
-    <meta property="og:image" content="https://s4iieera.github.io/assets/profile.png" />
+    <meta property="og:image" content="https://s4iieera.github.io/assets/profile.jpg" />
     <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://s4iieera.github.io/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,14 +28,32 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sameer Aqdas Ali",
+        "url": "https://s4iieera.github.io/",
+        "image": "https://s4iieera.github.io/assets/profile.jpg",
+        "jobTitle": "Software Engineering Graduate",
+        "email": "mailto:Sameer.ali10@hotmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Greenwich" },
+        "sameAs": [
+          "https://www.linkedin.com/in/sameer-ali-it/",
+          "https://github.com/S4iieera"
+        ]
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#top">Skip to content</a>
     <header class="site-header" data-elevated="false">
       <div class="header-inner">
         <a class="brand" href="#top" aria-label="Sameer Aqdas Ali home">
           <span class="brand-mark">S.A.</span>
         </a>
-        <nav class="nav-links" aria-label="Primary navigation">
+        <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
           <a href="#about">About</a>
           <a href="#education">Education</a>
           <a href="#projects">Projects</a>
@@ -45,14 +64,14 @@
         </nav>
         <div class="header-actions">
           <div class="social-links" aria-label="Social links">
-            <a href="https://www.linkedin.com/in/sameer-ali-it/" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/sameer-ali-it/" aria-label="LinkedIn" target="_blank" rel="noopener">
               <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path
                   d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM8.34 18H5.67V9.5h2.67V18ZM7 8.34a1.55 1.55 0 1 1 0-3.1 1.55 1.55 0 0 1 0 3.1ZM18.34 18h-2.66v-4.14c0-.99-.02-2.26-1.38-2.26-1.38 0-1.59 1.08-1.59 2.19V18h-2.66V9.5h2.55v1.16h.04c.36-.67 1.23-1.38 2.52-1.38 2.7 0 3.18 1.78 3.18 4.09V18Z"
                 />
               </svg>
             </a>
-            <a href="https://github.com/S4iieera" aria-label="GitHub">
+            <a href="https://github.com/S4iieera" aria-label="GitHub" target="_blank" rel="noopener">
               <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path
                   d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.57 9.57 0 0 1 12 6c.85 0 1.7.11 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"
@@ -60,7 +79,7 @@
               </svg>
             </a>
           </div>
-          <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open navigation">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
             <span></span>
             <span></span>
           </button>
@@ -88,13 +107,13 @@
             </p>
             <div class="hero-actions">
               <a class="button primary" href="#projects">View Projects</a>
-              <a class="button secondary" href="https://github.com/S4iieera">GitHub</a>
-              <a class="button secondary" href="https://www.linkedin.com/in/sameer-ali-it/">LinkedIn</a>
+              <a class="button secondary" href="https://github.com/S4iieera" target="_blank" rel="noopener">GitHub</a>
+              <a class="button secondary" href="https://www.linkedin.com/in/sameer-ali-it/" target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </div>
 
           <aside class="profile-panel" aria-label="Profile summary">
-            <img src="assets/profile.png" alt="Sameer Aqdas Ali" />
+            <img src="assets/profile.jpg" alt="Sameer Aqdas Ali" width="800" height="800" fetchpriority="high" />
             <div class="profile-text">
               <span class="status-pill">Open to graduate roles</span>
               <p>Based in London, interested in software engineering, data systems, and practical AI/NLP tools.</p>
@@ -160,6 +179,79 @@
 
         <article class="project-feature">
           <div class="project-content">
+            <p class="project-type">Currently Building</p>
+            <h3>Khulq — A Reflective Islamic Companion</h3>
+            <p>
+              A spiritual companion app for prayer, reflection, and character work — a quiet,
+              private space built as an installable web app, with AI guidance kept safely behind
+              a server-side API.
+            </p>
+            <ul class="project-points">
+              <li>Guided reflection conversations with AI-assisted guidance and a local fallback when AI is unavailable</li>
+              <li>Prayer preparation and review flows with location-aware prayer times</li>
+              <li>Journey memory and a growth view that turns saved reflections into gentle progress signals</li>
+              <li>40+ scripted regression checks plus Playwright browser tests and route smoke tests</li>
+            </ul>
+            <div class="tech-tags" aria-label="Khulq technologies">
+              <span>React</span>
+              <span>Vite</span>
+              <span>Tailwind CSS</span>
+              <span>Radix UI</span>
+              <span>TanStack Query</span>
+              <span>Node.js API</span>
+              <span>DeepSeek</span>
+              <span>Playwright</span>
+              <span>PWA</span>
+            </div>
+          </div>
+          <div class="project-panel" aria-label="Khulq summary">
+            <div class="metric">
+              <span>Stack</span>
+              <strong>React, Vite, Tailwind CSS</strong>
+            </div>
+            <div class="metric">
+              <span>AI</span>
+              <strong>Server-side guidance API</strong>
+            </div>
+            <div class="metric">
+              <span>Quality</span>
+              <strong>40+ automated checks</strong>
+            </div>
+          </div>
+          <figure class="phone-shots">
+            <img
+              src="assets/khulq-home.jpg"
+              alt="Khulq home screen with the message 'There is room for your heart here' and options to speak with Khulq or prepare for prayer"
+              width="780"
+              height="1688"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="assets/khulq-companion.jpg"
+              alt="Khulq companion conversation screen greeting the user and inviting an honest reflection"
+              width="780"
+              height="1688"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              src="assets/khulq-prayer.jpg"
+              alt="Khulq prayer screen listing the five daily prayers with a suggested next prayer"
+              width="780"
+              height="1688"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              Khulq's home, companion, and prayer screens — a calm, private interface designed
+              for honest reflection rather than streaks and scores.
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="project-feature">
+          <div class="project-content">
             <p class="project-type">Featured Project</p>
             <h3>UK News-Sentiment Pipeline</h3>
             <p>
@@ -173,8 +265,8 @@
               <li>Read-only Streamlit dashboard over saved outputs</li>
             </ul>
             <div class="project-links">
-              <a href="https://github.com/S4iieera/uk-news-sentiment-pipeline">GitHub Repo</a>
-              <a href="https://github.com/S4iieera/uk-news-sentiment-pipeline#results">Results</a>
+              <a href="https://github.com/S4iieera/uk-news-sentiment-pipeline" target="_blank" rel="noopener">GitHub Repo</a>
+              <a href="https://github.com/S4iieera/uk-news-sentiment-pipeline#results" target="_blank" rel="noopener">Results</a>
             </div>
             <div class="tech-tags" aria-label="Project technologies">
               <span>Python</span>
@@ -207,6 +299,10 @@
             <img
               src="assets/news-sentiment-trading-graph.png"
               alt="Streamlit dashboard showing UK equity price, sentiment signals, and Guardian article volume"
+              width="1920"
+              height="945"
+              loading="lazy"
+              decoding="async"
             />
             <figcaption>
               Dashboard drilldown view showing price movement, daily sentiment signals, and news
@@ -221,7 +317,7 @@
             <h3>Food Delivery ML Pipeline</h3>
             <p>An end-to-end pipeline with exploratory analysis, K-Prototypes clustering, a tuned Random Forest regressor, and complaint classification using scikit-learn.</p>
             <div class="project-links">
-              <a href="https://github.com/S4iieera/food-delivery-ml-pipeline">GitHub Repo</a>
+              <a href="https://github.com/S4iieera/food-delivery-ml-pipeline" target="_blank" rel="noopener">GitHub Repo</a>
             </div>
             <div class="tech-tags compact" aria-label="Food Delivery ML technologies">
               <span>Python</span>
@@ -234,7 +330,7 @@
             <h3>Metaheuristic Optimisation</h3>
             <p>Genetic Algorithm and Dispersive Flies Optimisation built from scratch and benchmarked on 30-dimensional test functions with multi-run statistical analysis.</p>
             <div class="project-links">
-              <a href="https://github.com/S4iieera/metaheuristic-optimisation-benchmarks">GitHub Repo</a>
+              <a href="https://github.com/S4iieera/metaheuristic-optimisation-benchmarks" target="_blank" rel="noopener">GitHub Repo</a>
             </div>
             <div class="tech-tags compact" aria-label="Optimisation technologies">
               <span>Python</span>
@@ -247,7 +343,7 @@
             <h3>Fashion-MNIST ResNet</h3>
             <p>A ResNet-style convolutional neural network for image classification, built and trained in Keras / TensorFlow.</p>
             <div class="project-links">
-              <a href="https://github.com/S4iieera/fashion-mnist-resnet">GitHub Repo</a>
+              <a href="https://github.com/S4iieera/fashion-mnist-resnet" target="_blank" rel="noopener">GitHub Repo</a>
             </div>
             <div class="tech-tags compact" aria-label="Deep learning technologies">
               <span>Keras</span>
@@ -260,7 +356,7 @@
             <h3>Java Multithreaded Chat</h3>
             <p>A client–server group chat handling concurrent connections with dynamic coordinator election, built with Maven and tested with JUnit.</p>
             <div class="project-links">
-              <a href="https://github.com/S4iieera/java-multithreaded-chat">GitHub Repo</a>
+              <a href="https://github.com/S4iieera/java-multithreaded-chat" target="_blank" rel="noopener">GitHub Repo</a>
             </div>
             <div class="tech-tags compact" aria-label="Java chat technologies">
               <span>Java</span>
@@ -331,6 +427,10 @@
               <img
                 src="assets/MKA-UK-Full-Logo-thick-border-white.png"
                 alt="Majlis Khuddamul Ahmadiyya United Kingdom logo"
+                width="2320"
+                height="668"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </article>
@@ -371,7 +471,7 @@
         <div class="timeline">
           <div class="timeline-item">
             <span>01</span>
-            <p>Building and publishing practical Python and data projects with clear documentation and tests.</p>
+            <p>Building Khulq, a reflective Islamic companion app for prayer, character, and personal growth — a React and Tailwind web app with AI-assisted guidance kept safely behind a server-side API.</p>
           </div>
           <div class="timeline-item">
             <span>02</span>
@@ -394,9 +494,9 @@
           </p>
         </div>
         <div class="contact-links">
-          <a href="mailto:Sameer.ali10@hotmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/sameer-ali-it/">LinkedIn</a>
-          <a href="https://github.com/S4iieera">GitHub</a>
+          <a href="mailto:Sameer.ali10@hotmail.com">Sameer.ali10@hotmail.com</a>
+          <a href="https://www.linkedin.com/in/sameer-ali-it/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/S4iieera" target="_blank" rel="noopener">GitHub</a>
         </div>
       </section>
     </main>
